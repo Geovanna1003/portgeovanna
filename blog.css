@@ -1,0 +1,80 @@
+
+
+/* Main blog container */
+.blog_section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Título principal do blog */
+.blog_section > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #505EFF;
+}
+
+/* Cada post */
+.blog_post {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(80, 94, 255, 0.2);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.blog_post:hover {
+  transform: translateY(-5px);
+}
+
+/* Título dos posts */
+.blog_post h2 {
+  margin-bottom: 8px;
+  color: #505EFF;
+}
+
+/* Data do post */
+.blog_date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Parágrafos */
+.blog_post p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+
+/* Código dentro do post */
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 15px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .blog_post {
+    padding: 20px;
+  }
+
+  .blog_section > h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+}
+
